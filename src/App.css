@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* NavBar Styles */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav h1 {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* CartWidget Styles */
+.cart-widget {
+  position: relative;
+}
+
+.cart-button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.cart-bubble {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* ItemListContainer Styles */
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+}
