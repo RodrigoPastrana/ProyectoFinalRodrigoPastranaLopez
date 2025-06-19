@@ -1,9 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; 
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { useCart } from './CartContext';
 
 const CartWidget = () => {
-  const itemsCount = 0;
+  const { cart } = useCart();
+  const itemsCount = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <div className="cart-widget">
